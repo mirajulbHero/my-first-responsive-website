@@ -1,11 +1,29 @@
 
 
+/* common style */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: intel;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+}
+h1,h2,h3 {
+    font-family: Noto serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
 /*******************************
   header area style 
  *******************************/
 
 .header-area {
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .nav-area {
@@ -15,6 +33,9 @@
 }
 .nav-items {
     display: flex;
+}
+.nav-area .nav-items  {
+    margin-top: 30px;
 }
 .nav-items li {
     list-style: none;
@@ -43,17 +64,65 @@
 }
 
 
+/* banner style */
+
+.banner-section {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+.banner-content {
+    width: 570px;
+}
+.banner-content h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: black;
+}
+.banner-content h1 span {
+    color: #E95A08;
+}
+.banner-content p {
+    margin-top: 20px;
+}
+
+
 /* media query */
 @media screen and (max-width :576px) {
     .nav-area {
         margin-top: 20px;
+        margin-left: 30px;
     }
     .nav-items li:nth-child(1),
     .nav-items li:nth-child(2),
     .nav-items li:nth-child(3) {
         display: none;
     }
+
     .nav-items img {
         width: 20px;
+    }
+    .nav-items li:nth-child(4){
+        margin:30px;
+    }
+
+    /* banner media query */
+
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+    .banner-section img {
+        width: 100%;
+    }
+    .banner-content {
+        margin-left: 170px;
+    }
+    .banner-content h1 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .banner-content p {
+        font-size: 18px;
     }
 }
