@@ -154,24 +154,25 @@ p {
 .flower-lover {
     max-width: 1140px;
     margin: 200px auto;
-    position: relative; 
+    position: relative;
 }
 .flower-lover .bage-img {
-       width: 200px;
+    width: 200px;
     position: absolute;
     top: -75px;
-    left: 436px;
+    left: 430px;
 }
 .flower-lover-details {
      display: flex;
     
 } 
 .flower-lover-details img {
-    max-width: 100%;
+   width: 540px;
+   height: auto;
 }
 .flower-lover-content {
     margin: 50px 40px;
-    max-width: 100%;
+    width: 100%;
     margin-left: 65px;
 }
 .flower-lover-content h3 {
@@ -227,22 +228,23 @@ p {
         font-size: 16px;
     }
     /* our plan media query */
-    /* .plan-content {
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-        column-gap: 5px;
-        justify-content: center;
-      
-    } 
+    .plan-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .card {
-        max-width: 160px;
+       max-width: 50%;
     }
-    .card .card-img {
-        max-width: 130px;
+    
+    /* flower lover media query */
+    .flower-lover-details {
+        flex-direction: column;
     }
-    .plan-description p  {
-        font-size: 19px;
+    .flower-lover .bage-img {
+        display: none;
     }
-    .card .btn-card {
-        width: 100%;
-    } */
+    .flower-lover-content h3  {
+        font-size:25px;
+    }
+   
 }
