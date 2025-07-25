@@ -158,7 +158,6 @@ p {
     max-width: 1140px;
     margin: 200px auto;
     position: relative;
-    overflow: hidden;
 }
 .flower-lover .bage-img {
     width: 200px;
@@ -294,6 +293,48 @@ p {
     font-weight: 600;
 }
 
+/* colorful bunch area style */
+
+.colorful-bunch {
+    background-image: url('../images/news-letter-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 50px;
+}
+.scerch-possition {
+    position: relative;
+    display: inline-block;
+}
+.scerch-possition button {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+
+}
+.colorful-bunch h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+.colorful-bunch input {
+    width: 700px;
+    padding: 10px 15px;
+    
+}
+
+.colorful-bunch button {
+    background-color: #E95A08;
+    padding: 12px 25px;
+    border: none;
+    color: white;
+    margin-right: 0;
+    
+}
+
+
 
 
 
@@ -379,7 +420,25 @@ p {
         width: 370px;
     }
     .deal-twintyfive-area h4 {
-    font-size: 20px;
-    font-weight: bold;
-}
+         font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* colorful-bunch area media query */
+    .colorful-bunch {
+         padding: 80px 0;
+         margin-top: 55px;
+    }
+    .colorful-bunch h2 {
+        font-size: 30px;
+    }
+    .colorful-bunch input {
+        width: 290px;
+        padding: 10px 15px;
+        margin-left: -120px;
+    
+    }
+
+
+
 }
