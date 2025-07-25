@@ -156,7 +156,7 @@ p {
 
 .flower-lover {
     max-width: 1140px;
-    margin: 200px auto;
+    margin: 150px auto;
     position: relative;
 }
 .flower-lover .bage-img {
@@ -302,6 +302,7 @@ p {
     text-align: center;
     padding: 100px 0;
     margin-top: 50px;
+    overflow: hidden;
 }
 .scerch-possition {
     position: relative;
@@ -332,6 +333,26 @@ p {
     color: white;
     margin-right: 0;
     
+}
+
+/* footer area style */
+.footer-area {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.footer-menu-area li,
+.footer-feature-area li {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.footer-menu-area li:nth-child(5){
+    padding-bottom: 10px;
+}
+.footer-area .social-img img {
+    margin-right: 15px;
 }
 
 
@@ -437,6 +458,13 @@ p {
         padding: 10px 15px;
         margin-left: -120px;
     
+    }
+
+    /* footer area media query */
+    .footer-area {
+        flex-direction: column;
+        padding-left: 15px;
+        padding-bottom: 25px;
     }
 
 
